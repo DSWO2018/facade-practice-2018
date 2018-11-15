@@ -27,4 +27,27 @@ public class FacadeGraduationParty {
 
     }
 
+
+    public void partyFull(){
+        postre.postreOn();
+        mesero.meseroOn();
+        musica.musicOn();
+        ponche.poncheOn();
+        pista.pistaOn();
+        comida.toEat();
+        bebidas.toDrink();
+        bailar.toDance();
+    }
+
+    public void partyOver(){
+        postre.postreOf();
+        mesero.meseroOf();
+        musica.musicOf();
+        ponche.poncheOf();
+        pista.pistaOn();
+        comida.toNEat();
+        bebidas.toNDrink();
+        bailar.toNDance();
+    }
+
 }
