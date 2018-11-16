@@ -12,3 +12,4 @@ public interface Entertainment {
      */
     void endEntretainment();
 }
+
