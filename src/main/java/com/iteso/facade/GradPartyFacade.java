@@ -56,11 +56,10 @@ public class GradPartyFacade {
      * @param l .
      * @param m .
      */
-    public GradPartyFacade(
-            final Drinks dri,
-            final Entertainment ent,
-            final Lights l,
-            final Music m) {
+    public GradPartyFacade(final Drinks dri,
+                           final Entertainment ent,
+                           final Lights l,
+                           final Music m) {
 
         this.drinks = dri;
         this.entertainment = ent;
@@ -68,10 +67,11 @@ public class GradPartyFacade {
         this.music = m;
 
     }
+
     /**
-     *
+     * @return .
      */
-    public final void serveAllFood() {
+    public final String serveAllFood() {
         System.out.println();
         System.out.println("Sirviendo toda la comida...");
         System.out.println();
@@ -85,12 +85,15 @@ public class GradPartyFacade {
         waiters.startServing();
 
         desserts.prepareDesserts();
+
+        return "Comida Servida!";
     }
 
+
     /**
-     *
+     * @return .
      */
-    public final void stopFood() {
+    public final String stopFood() {
         System.out.println();
         System.out.println("Deteniendo toda la preparación de comida...");
         System.out.println();
@@ -104,11 +107,14 @@ public class GradPartyFacade {
         desserts.stopDesserts();
 
         waiters.stopServing();
+
+        return "Preparación de Comida Detenida!";
     }
+
     /**
-     *
+     * @return .
      */
-    public final void startPartying() {
+    public final String startPartying() {
         System.out.println();
         System.out.println("¡Que comience la fiesta!");
         System.out.println();
@@ -120,11 +126,14 @@ public class GradPartyFacade {
         lights.on();
 
         music.on();
+
+        return "Fiesta en proceso";
     }
+
     /**
-     *
+     * @return .
      */
-    public final void stopPartyin() {
+    public final String stopPartying() {
         System.out.println();
         System.out.println("Se acabó la fiesta :( ");
         System.out.println();
@@ -136,6 +145,8 @@ public class GradPartyFacade {
         lights.off();
 
         music.off();
+
+        return "Fiesta Terminada";
     }
 
 }

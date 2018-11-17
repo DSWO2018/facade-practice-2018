@@ -47,12 +47,12 @@ public final class Driver {
 
         GradPartyFacade gpf2 = new GradPartyFacade(bebidas, ent, luz, dj);
 
-        gpf1.serveAllFood();
+        System.out.println(gpf1.serveAllFood());
 
-        gpf1.stopFood();
+        System.out.println(gpf1.stopFood());
 
-        gpf2.startPartying();
+        System.out.println(gpf2.startPartying());
 
-        gpf2.stopPartyin();
+        System.out.println(gpf2.stopPartying());
     }
 }
