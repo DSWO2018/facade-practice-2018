@@ -6,11 +6,11 @@ import com.iteso.facade.interfaces.Lights;
  * Created by Palaf on 17/11/2018.
  */
 public class LigthsParty implements Lights {
-    public void turnOn() {
-        System.out.println("Que se haga la luz");
+    public String turnOn() {
+        return "Que se haga la luz";
     }
 
-    public void turnOff() {
-        System.out.println("Quien apago la luz");
+    public String turnOff() {
+        return "Quien apago la luz";
     }
 }

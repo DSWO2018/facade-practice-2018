@@ -5,5 +5,4 @@ package com.iteso.facade.interfaces;
  */
 public interface Snaks {
     String getSnaks();
-    void serveSnaks(Waiters waiters);
 }

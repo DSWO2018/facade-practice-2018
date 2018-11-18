@@ -4,7 +4,7 @@ package com.iteso.facade.interfaces;
  * Created by Palaf on 17/11/2018.
  */
 public interface Graduation {
-    void welcomes();
+    boolean welcomes();
     void startParty();
     void endParty();
     void drinking();

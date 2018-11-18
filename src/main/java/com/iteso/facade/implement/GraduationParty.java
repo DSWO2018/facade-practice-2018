@@ -28,37 +28,40 @@ public class GraduationParty implements Graduation {
         this.waiters = waiters;
     }
 
-    public void welcomes() {
+    public boolean welcomes() {
         if(guestes.getTichet().getTicketsName() == getTickets().getTicketsName()){
             System.out.println("Welcome party WUUUUU!");
             startParty();
             endParty();
+            return true;
         }else {
             System.out.println("Your not invited");
+            return false;
         }
     }
 
     public void drinking() {
-        getWaiters().serve(getDrinks().getDrinks());
-        getGuestes().drinking(getDrinks());
+        System.out.println(getWaiters().serve(getDrinks().getDrinks()));
+        System.out.println(getGuestes().drinking(getDrinks()));
     }
 
     public void eating() {
-        getWaiters().serve(getFood().getFood());
-        getGuestes().eating(getFood());
+        System.out.println(getWaiters().serve(getFood().getFood()));
+        System.out.println(getGuestes().eating(getFood()));
     }
 
     public void dancing() {
-        getGuestes().dancing(getMusic());
+        System.out.println(getGuestes().dancing(getMusic()));
     }
 
     public void snacking() {
-        getWaiters().serve(getSnaks().getSnaks());
+        System.out.println(getWaiters().serve(getSnaks().getSnaks()));
+
     }
 
     public void startParty() {
         System.out.println("START THIS PEDOROON!");
-        getLights().turnOn();
+        System.out.println(getLights().turnOn());
         System.out.println(getMusic().turnOn() +"!!");
         snacking();
         drinking();
@@ -67,7 +70,7 @@ public class GraduationParty implements Graduation {
     }
 
     public void endParty() {
-        getLights().turnOff();
+        System.out.println(getLights().turnOff());
         System.out.println(getMusic().turnOff());
         System.out.println("Thanks for coming");
     }

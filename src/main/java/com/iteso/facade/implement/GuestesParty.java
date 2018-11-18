@@ -12,17 +12,17 @@ public class GuestesParty implements Guestes {
         this.myTicket = myTicket;
     }
 
-    public void dancing(Music music) {
-        System.out.println("Dancing with "+ music.turnOn());
+    public String dancing(Music music) {
+        return "Dancing with "+ music.turnOn();
 
     }
 
-    public void drinking(Drinks drinks) {
-        System.out.println("Drinking " + drinks.getDrinks());
+    public String drinking(Drinks drinks) {
+        return "Drinking " + drinks.getDrinks();
     }
 
-    public void eating(Food food) {
-        System.out.println("Eating " + food.getFood());
+    public String eating(Food food) {
+        return "Eating " + food.getFood();
     }
 
     public Tickets getTichet() {
