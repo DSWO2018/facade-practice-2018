@@ -1,11 +1,20 @@
 package com.iteso.facade;
 
+/**
+ * pista.
+ */
 public class Pista {
-
-    public void pistaOn(){
+    /**
+     * pista on.
+     */
+    public final void pistaOn() {
         System.out.println("Pista lista");
     }
-    public void pistaOff(){
+
+    /**
+     * pista off.
+     */
+    public final void pistaOff() {
         System.out.println("Pista no lista");
     }
 }

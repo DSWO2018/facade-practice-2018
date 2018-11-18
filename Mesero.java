@@ -1,11 +1,22 @@
 package com.iteso.facade;
 
+/**
+ * mesero.
+ */
 public class Mesero {
-
-    public void meseroOn(){
+    /**
+     * mesero on.
+     * @return      */
+    public final String meseroOn() {
         System.out.println("Si hay Meseros");
+        return "Si hay Meseros";
     }
-    public void meseroOf(){
+
+    /**
+     * mesero off.
+     * @return     */
+    public final String meseroOf() {
         System.out.println("No hay Meseros");
+        return "No hay Meseros";
     }
 }

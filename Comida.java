@@ -1,12 +1,24 @@
 package com.iteso.facade;
 
+/**
+ * class comida.
+ */
 public class Comida {
    // String action;
 
-    public void toEat(){
+    /**
+     * to eat.
+     * @return      */
+    public final String toEat() {
         System.out.println("Comiendo");
+        return "Comiendo";
     }
-    public void toNEat(){
+
+    /**
+     * not eat.
+     */
+    public final String toNEat() {
         System.out.println("No Comiendo");
+        return "No comiendo";
     }
 }

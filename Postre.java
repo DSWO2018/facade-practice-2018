@@ -1,10 +1,21 @@
 package com.iteso.facade;
 
+/**
+ * postre.
+ */
 public class Postre {
-    public void postreOn(){
+    /**
+     * postre on.
+     */
+    public final void postreOn() {
         System.out.println("Postre listo");
     }
-    public void postreOf(){
+
+    /**
+     *postre off.
+     */
+
+    public final void postreOf() {
         System.out.println("No hay postre disponible");
     }
 

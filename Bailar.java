@@ -1,11 +1,20 @@
 package com.iteso.facade;
 
+/**
+ * clas vailar.
+ */
 public class Bailar {
-
-    public void toDance(){
+    /**
+     * todance.
+     */
+    public final void toDance() {
         System.out.println("Bailando");
     }
-    public void toNDance(){
+
+    /**
+     * not daance.
+     */
+    public final void toNDance() {
         System.out.println("No Bailando");
     }
 }
